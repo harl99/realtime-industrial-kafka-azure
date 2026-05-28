@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment secrets
+.env
+
+# Data
+data/raw/*.jsonl
+data/processed/*.jsonl
+data/processed/*.csv
+
+# OS
+.DS_Store
+
+# Reports
+reports/*.png

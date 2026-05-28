@@ -1,0 +1,2 @@
+total_events,critical_events,warning_events,normal_events,avg_temperature_c,avg_vibration_mm_s,avg_energy_kwh,top_machine_by_events,alert_rate_percent
+2278,927,721,630,80.14,6.34,45.18,M-001,72.34
