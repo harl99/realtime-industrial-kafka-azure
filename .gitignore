@@ -17,3 +17,4 @@ data/processed/*.csv
 
 # Reports
 reports/*.png
+data_lake/
