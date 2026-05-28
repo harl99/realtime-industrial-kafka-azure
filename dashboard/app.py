@@ -34,12 +34,12 @@ else:
 st.subheader("Event Status Distribution")
 status_counts = df["status"].value_counts().reset_index()
 status_counts.columns = ["status", "count"]
-st.plotly_chart(px.bar(status_counts, x="status", y="count"), use_container_width=True)
+st.plotly_chart(px.bar(status_counts, x="status", y="count"), width='stretch')
 
 st.subheader("Events by Machine")
 machine_counts = df["machine_id"].value_counts().reset_index()
 machine_counts.columns = ["machine_id", "count"]
-st.plotly_chart(px.bar(machine_counts, x="machine_id", y="count"), use_container_width=True)
+st.plotly_chart(px.bar(machine_counts, x="machine_id", y="count"), width='stretch')
 
 st.subheader("Temperature vs Vibration")
 fig_scatter = px.scatter(
@@ -49,7 +49,7 @@ fig_scatter = px.scatter(
     color="status",
     hover_data=["machine_id", "priority", "energy_kwh"],
 )
-st.plotly_chart(fig_scatter, use_container_width=True)
+st.plotly_chart(fig_scatter, width='stretch')
 
 st.subheader("Recent Events")
-st.dataframe(df.tail(50), use_container_width=True)
+st.dataframe(df.tail(50), width='stretch')

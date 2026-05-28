@@ -7,14 +7,12 @@ venv/
 # Environment secrets
 .env
 
-# Data
-data/raw/*.jsonl
-data/processed/*.jsonl
-data/processed/*.csv
+# Generated lakehouse data
+data_lake/**/*.jsonl
+data_lake/**/*.csv
+
+# Keep structure
+!data_lake/**/.gitkeep
 
 # OS
 .DS_Store
-
-# Reports
-reports/*.png
-data_lake/
